@@ -1,0 +1,30 @@
+<div class="row">
+  <app-hot-tour></app-hot-tour>
+</div>
+<div class="row">
+  <app-map></app-map>
+</div>
+
+<!--- places and detailed places -->
+<div class="row">
+  <div class="col-sm-4">
+    <app-places [imageSrc]="places[0].imageSrc" [Description]="places[0].description" [Title]="places[0].title"></app-places>
+  </div>
+  <div class="col-sm-4">
+    <app-places [imageSrc]="places[1].imageSrc" [Description]="places[1].description" [Title]="places[1].title"></app-places>
+  </div>
+  <div class="col-sm-4">
+    <app-places [imageSrc]="places[2].imageSrc" [Description]="places[2].description" [Title]="places[2].title"></app-places>
+  </div>
+</div>
+<div class="row" style="margin-top: 20px;">
+  <app-detailed-places [imagesrc]="DetailedList[0].imageSrc" [placeId]="kandy" [description]="DetailedList[0].description"></app-detailed-places>
+</div>
+<div class="row" style="margin-top: 20px;">
+  <app-detailed-places [imagesrc]="DetailedList[1].imageSrc" [placeId]="polonnaruwa" [description]="DetailedList[1].description"></app-detailed-places>
+</div>
+<div class="row" style="margin-top: 20px;">
+  <app-detailed-places [imagesrc]="DetailedList[2].imageSrc" [placeId]="sigiriya" [description]="DetailedList[2].description"></app-detailed-places>
+</div>
+
+
